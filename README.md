@@ -1,12 +1,12 @@
 # web-input-unlocked
 A browser extension that re-enables read only and disabled text and password inputs on the majority of websites.
 
-### The logo
-![Logo](icons/icon-128.png)
+### Logo
+<img src="src/logo-512.png" alt="Logo" width="128px" height="128px">
 
 *Logo designed by [EAZ Creative LLC](https://www.eazcreative.com/)*
 
-### The UI
+### UI
 ![Light Notice Message UI](screenshots/light-notice.png)
 ![Dark Notice Message UI](screenshots/dark-notice.png)
 
