@@ -1,3 +1,4 @@
+/* Checkbox slider/toggle */
 .switch {
     position: relative;
     display: inline-block;
@@ -18,7 +19,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -30,7 +30,7 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #f6f6f6;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -49,7 +49,6 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
     border-radius: 34px;
 }
@@ -63,8 +62,7 @@ input:checked+.slider:before {
     display: none;
 }
 
-/* Set from JS */
-.bodyCompat {
+.bodyDisabled {
     height: 100%;
     margin: 0;
     min-width: 320px;
@@ -74,12 +72,20 @@ input:checked+.slider:before {
 
 .bodyEnabled {
     height: 100%;
-    min-width: 80px;
+    min-width: 90px;
     overflow: hidden !important;
 }
 
+/* Dark & Light Theme */
+.slider-dark {
+    background-color: #5d5f6f;
+}
+
+.slider-light {
+    background-color: #ccc;
+}
+
 .bg-dark {
-    /* background-color: #3c424e; */
     background-color: #2e2f37;
     color: #d4dce5;
 }
@@ -89,17 +95,39 @@ input:checked+.slider:before {
     color: #353c45;
 }
 
-.rectangle {
+.separator-dark {
+    border-bottom: #d4dce5 2px solid;
+    padding-bottom: 10px;
+}
+
+.separator-light {
+    border-bottom: #353c45 2px solid;
+    padding-bottom: 10px;
+}
+
+div > .refresh-icon-dark:hover {
+    background-color: #5d5f6f;
+}
+
+div > .refresh-icon-light:hover {
+    background-color: #93a7be;
+}
+
+/* Notice Message */
+.notice-section {
     height: 50px;
     width: 400px;
-    /* border-left: #9999ff 8px solid; */
     border-left: #9183ee 8px solid;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.notice-icon {
+    font-size: 18px;
+}
+
+div > .refresh-icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 8px;
 }
 
 .info {
@@ -111,4 +139,11 @@ input:checked+.slider:before {
 .material-symbols-outlined {
     font-size: 22px;
     margin: 5px;
+}
+
+/* Generic container to center various elements */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

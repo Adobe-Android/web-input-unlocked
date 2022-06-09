@@ -1,0 +1,23 @@
+{
+  "name": "web-input-unlocked",
+  "version": "1.0.0",
+  "description": "A browser extension that re-enables read only and disabled text and password inputs on the majority of websites.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adobe-Android/web-input-unlocked.git"
+  },
+  "author": "David Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adobe-Android/web-input-unlocked/issues"
+  },
+  "homepage": "https://github.com/Adobe-Android/web-input-unlocked#readme",
+  "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^1.5.2",
+    "@lottiefiles/lottie-player": "^1.5.7"
+  }
+}
