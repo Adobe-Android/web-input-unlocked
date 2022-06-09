@@ -5,7 +5,7 @@ function protocolIsApplicable(url) {
     return APPLICABLE_PROTOCOLS.includes(protocol);
 }
 
-function doThing() {
+function removeInputAttributes() {
     function removeInputAttribute(array) {
         for (let i = 0; i < array.length; i++) {
             if (array[i].hasAttribute('readonly')) {
@@ -21,4 +21,4 @@ function doThing() {
     removeInputAttribute(document.querySelectorAll('input[type="password"]'));
 }
 
-export { protocolIsApplicable, doThing };
+export { protocolIsApplicable, removeInputAttributes };

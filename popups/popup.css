@@ -62,7 +62,7 @@ input:checked+.slider:before {
     display: none;
 }
 
-.bodyDisabled {
+.body-disabled {
     height: 100%;
     margin: 0;
     min-width: 320px;
@@ -70,7 +70,7 @@ input:checked+.slider:before {
     padding: 5px;
 }
 
-.bodyEnabled {
+.body-enabled {
     height: 100%;
     min-width: 90px;
     overflow: hidden !important;
@@ -127,7 +127,6 @@ div > .refresh-icon-light:hover {
 div > .refresh-icon {
     width: 60px;
     height: 60px;
-    margin-top: 8px;
 }
 
 .info {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,25 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="popup.css">
 </head>
-<body id="bodyId" class="bg-dark">
-  <div id="popupContent" class="hidden">
+
+<body id="js-body-id" class="bg-dark">
+  <div id="js-popup-content" class="hidden">
     <div class="container">
-      <h2 id="toggleStatus"></h2>
+      <h2 id="js-toggle-status"></h2>
     </div>
-    <div id="toggle-container" class="container">
-      <label id="label-title" class="switch" aria-label="Click to enable for this site" title="Click to enable for this site">
-        <input id="toggle" type="checkbox">
-        <span id="slider" class="slider round"></span>
+    <div id="js-toggle-container" class="container">
+      <label id="js-label-title" class="switch" aria-label="Click to enable for this site"
+        title="Click to enable for this site">
+        <input id="js-toggle" type="checkbox">
+        <span id="js-slider" class="slider round"></span>
       </label>
     </div>
-    <div class="container" aria-label="Refresh" title="Refresh">
-      <lottie-player id="refresh-btn" class="refresh-icon" background="transparent" speed="1">
+    <div id="js-refresh-btn-container" class="container" aria-label="Refresh" title="Refresh">
+      <lottie-player id="js-refresh-btn" class="refresh-icon" background="transparent" speed="1">
       </lottie-player>
     </div>
   </div>
-  <div id="compatMessage" class="hidden">
+  <div id="js-compat-message" class="hidden">
     <div class="notice-section container">
       <span class="material-symbols-outlined notice-icon">
         info
@@ -42,4 +45,5 @@
   <script src="../node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
   <script type="module" src="popup.js"></script>
 </body>
+
 </html>
