@@ -11,7 +11,7 @@ const slider = document.getElementById("js-slider");
 // Handle all dark & light theme logic
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   console.log("Dark theme");
-  player.load("lf30_editor_heoe3drh.json");
+  player.load("../assets/lf30_editor_heoe3drh.json");
   document.getElementById("js-body-id").classList.remove("bg-light");
   document.getElementById("js-body-id").classList.add("bg-dark");
   document.getElementById("js-toggle-container").classList.remove("separator-light");
@@ -22,7 +22,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   refreshBtnContainer.classList.add("refresh-icon-dark");
 } else {
   console.log("Light theme");
-  player.load("lf30_editor_xgdtcggs.json");
+  player.load("../assets/lf30_editor_xgdtcggs.json");
   document.getElementById("js-body-id").classList.remove("bg-dark");
   document.getElementById("js-body-id").classList.add("bg-light");
   document.getElementById("js-toggle-container").classList.remove("separator-dark");
@@ -55,6 +55,8 @@ chrome.storage.sync.get('enabledDict', async ({ enabledDict }) => {
     document.getElementById("js-popup-content").classList.remove("hidden")
     if (enabledDict[tab.id]) {
       toggle.checked = true;
+      document.getElementById("js-label-title").setAttribute("title", "Click to disable for this site")
+      document.getElementById("js-label-title").setAttribute("aria-label", "Click to disable for this site")
     }
   }
 

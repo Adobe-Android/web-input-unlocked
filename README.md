@@ -2,7 +2,7 @@
 A browser extension that re-enables read only and disabled text and password inputs on the majority of websites.
 
 ### Logo
-<img src="src/logo-512.png" alt="Logo" width="128px" height="128px">
+<img src="logo-512.png" alt="Logo" width="128px" height="128px">
 
 *Logo designed by [EAZ Creative LLC](https://www.eazcreative.com/)*
 
