@@ -124,6 +124,10 @@ div > .refresh-icon-light:hover {
     font-size: 18px;
 }
 
+.notice-header {
+    font-size: 18px;
+}
+
 div > .refresh-icon {
     width: 60px;
     height: 60px;
