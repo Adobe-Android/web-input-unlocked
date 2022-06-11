@@ -1,8 +1,10 @@
+# https://docs.wand-py.org/en/0.6.7/
+
 from wand.image import Image
 
 icon_sizes = [16, 24, 32, 48, 128]
 
-with Image(filename='src/logo-512.png') as img:
+with Image(filename='logo-512.png') as img:
     for size in icon_sizes:
         with img.clone() as i:
             i.resize(size, size)
