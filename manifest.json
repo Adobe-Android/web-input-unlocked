@@ -1,11 +1,11 @@
 {
   "name": "Web Input Unlocked",
-  "description": "Re-enables read only and disabled text and password inputs on the majority of websites.",
+  "description": "Unlock a better user experience.",
   "version": "1.0",
   "manifest_version": 3,
   "author": "David Brown",
   "homepage_url": "https://github.com/Adobe-Android/web-input-unlocked",
-  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "permissions": ["storage", "activeTab", "scripting"],
   "background": {
     "service_worker": "src/background.js",
     "type": "module"
