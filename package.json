@@ -1,6 +1,6 @@
 {
   "name": "web-input-unlocked",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A browser extension that re-enables read only and disabled text and password inputs on the majority of websites.",
   "main": "background.js",
   "scripts": {
