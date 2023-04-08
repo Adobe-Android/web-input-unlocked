@@ -89,7 +89,7 @@ toggle.addEventListener('change', async () => {
       enabledDict[tab.id] = true;
       chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        function: common.removeInputAttributes,
+        func: common.removeInputAttributes,
       });
     } else if (!toggle.checked) {
       delete enabledDict[tab.id];
