@@ -18,7 +18,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       if (enabledDict[tabId]) {
         chrome.scripting.executeScript({
           target: { tabId: tab.id },
-          function: common.removeInputAttributes,
+          func: common.removeInputAttributes,
         });
       }
     });
