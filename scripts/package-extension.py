@@ -32,7 +32,9 @@ def package_chromium(directory, node_modules_directory):
         for file_path in directory.glob("icons/*"):
             archive.write(file_path, arcname=file_path.relative_to(directory))
         for file_path in directory.glob("platform/chromium/*"):
-            archive.write(file_path, arcname=file_path.relative_to(directory))
+            index = file_path.parts.index(file_path.name)
+            archive_write_file_path = pathlib.Path(directory).joinpath(*file_path.parts[index:])
+            archive.write(file_path, arcname=archive_write_file_path.relative_to(directory))
         for filename in filenames:
             archive.write(filename)
         for file_path in node_modules_directory.rglob("*"):
@@ -55,7 +57,9 @@ def package_firefox(directory, node_modules_directory):
         for file_path in directory.glob("icons/*"):
             archive.write(file_path, arcname=file_path.relative_to(directory))
         for file_path in directory.glob("platform/firefox/*"):
-            archive.write(file_path, arcname=file_path.relative_to(directory))
+            index = file_path.parts.index(file_path.name)
+            archive_write_file_path = pathlib.Path(directory).joinpath(*file_path.parts[index:])
+            archive.write(file_path, arcname=archive_write_file_path.relative_to(directory))
         for filename in filenames:
             archive.write(filename)
         for file_path in node_modules_directory.rglob("*"):
